@@ -1,0 +1,69 @@
+---
+title       : BMI Calculation
+subtitle    : Hello everyone! In this presentation I will explain what is the Body Mass Index, and how can we calculate it!
+author      : Rafael
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+output: pdf_document
+date: June 11, 2018
+---
+
+
+## What is?
+
+The Body Mass Index (BMI) is a measure of our size status, allowing us easily to realize if we have to change
+our lifestyle in order to be in a more appropiate weight for our height.
+
+
+
+
+--- .class #id 
+
+## Calculation
+
+If you want to obtain your BMI, you have to measure your weight and height. After that, you only have to use this formula:
+
+$$\frac{weight(kg)}{height(m)^2}$$
+
+--- .class #id 
+## Results
+
+After obtaining your BMI, its neccesary to classify your result:
+
+Lower than 18.5: Underweight
+
+Between 18.5 and 25: Optimal
+
+25 up to 30: Overweight
+
+30 upwards: Obese
+
+--- .class #id 
+## Example
+
+Let's do a simple example to understand this:
+
+Just imagine a random person with this parameters:
+
+Weight: 65kg
+Height: 1.75m
+
+$$BMI = \frac{65}{1.75^2}$$
+
+
+```r
+BMI = 65/(1.75^2)
+
+print(BMI)
+```
+
+```
+## [1] 21.22449
+```
+So we can conclude this person is in his happy weight!
+
